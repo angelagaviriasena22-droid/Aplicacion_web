@@ -1,15 +1,15 @@
 body {
-    background-color: #ffffff ;
+    background-color: #f4f7f6;
     font-family: Arial, sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     margin: 0;
 }
 
 .card-container {
-    background-color: #c0f0ff;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 24px;
@@ -31,7 +31,7 @@ body {
 }
 
 .subtitulo {
-    color: #000000;
+    color: #555;
     font-size: 14px;
     text-align: center;
     margin-bottom: 20px;
@@ -41,58 +41,92 @@ body {
     font-size: 48px;
     font-weight: bold;
     color: #3498db;
-    margin: 10px 0 20px 0;
-    text-align: center;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+/* RETO 2: Estilo dinámico si supera los 10 likes */
+.numero-contador.alerta-superado {
+    color: #e74c3c;
 }
 
 .boton-interactivo {
-    background-color: hsl(199, 63%, 49%);
-    color: #f8f8f8;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 30px;
     border: none;
     border-radius: 6px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
     cursor: pointer;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+    transition: background-color 0.2s ease;
 }
 
 .boton-interactivo:hover {
-    background-color: #61e0f7;
+    background-color: #27ae60;
+}
+
+/* RETO 1: Estilo para el botón de reiniciar */
+.boton-reiniciar {
+    background-color: #e67e22;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.boton-reiniciar:hover {
+    background-color: #d35400;
 }
 
 .tabla-contenedor {
     width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
-    border: 1px solid #8ebfff;
+    max-height: 220px;
+    border: 1px solid #e0e0e0;
     border-radius: 6px;
+    overflow-y: auto;
 }
 
 .tabla-registros {
     width: 100%;
     border-collapse: collapse;
-    text-align: center;
 }
 
 .tabla-registros th {
-    background-color: #74b9ff;
-    color: #eaf4f5;
-    font-size: 14px;
+    background-color: #f8f9fa;
+    color: #7f8c8d;
     font-weight: 600;
+    font-size: 14px;
     padding: 10px;
+    text-align: center;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .tabla-registros td {
-    padding: 10px;
+    color: #333;
     font-size: 14px;
-    color: #070707;
+    padding: 10px;
+    text-align: center;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .tabla-registros tbody tr:nth-child(even) {
     background-color: #fafafa;
+}
+
+.cell-numero {
+    width: 40%;
+}
+
+.cell-hora {
+    width: 60%;
 }
