@@ -1,0 +1,98 @@
+body {
+    background-color: #ffffff ;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    background-color: #c0f0ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.titulo-principal {
+    color: #2c3e50;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.numero-contador {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3498db;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+.boton-interactivo {
+    background-color: hsl(199, 63%, 49%);
+    color: #f8f8f8;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+}
+
+.boton-interactivo:hover {
+    background-color: #61e0f7;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #8ebfff;
+    border-radius: 6px;
+}
+
+.tabla-registros {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabla-registros th {
+    background-color: #74b9ff;
+    color: #eaf4f5;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-registros td {
+    padding: 10px;
+    font-size: 14px;
+    color: #070707;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-registros tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
